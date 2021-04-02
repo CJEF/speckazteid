@@ -1,0 +1,50 @@
+.goals {
+    &__container {
+        display: flex;
+        margin: 0 auto;
+    }
+    &__content {
+        width: 50%;
+        background-color: $bg-cream;
+        padding: 70px 140px 85px;
+        position: relative;
+        &-inner {
+            float: right;
+        }
+    }
+    &__list {
+        margin-top: 35px;
+    }
+    &__list-item {
+        max-width: 335px;
+    }
+    &__mackbook {
+        width: 65%;
+        margin-top: -23px;
+        position: absolute;
+    }
+
+}
+
+.list-numbered {
+    counter-reset: list;
+    position: relative;
+    &__item {
+        font-size: 18px;
+        padding-left: 30px;
+        line-height: 28px;
+        position: relative;
+        margin-bottom: 25px;
+        &:before {
+            counter-increment: list;
+            content: "0" counter(list);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 18px;
+            font-weight: 900;
+            color: $blue;
+            line-height: 28px;
+        }
+    }
+}

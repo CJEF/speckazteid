@@ -1,0 +1,57 @@
+.intro {
+    background-image: url('../images/src/intro-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    &__block {
+        padding: 100px 0 195px;
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+    &__inner {
+        background-color: $bg;
+        padding: 90px 145px 80px;
+        text-align: center;
+        position: relative;
+    }
+    &__subtitle {
+        max-width: 650px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        margin-bottom: 15px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 2px;
+            background-color: #fff;
+            bottom: 0;
+            @include x-center;
+        }
+    }
+    &__text {
+        max-width: 570px;
+        margin: 0 auto;
+    }
+    &__link {
+        margin-top: 55px;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__bottom {
+        position: absolute;
+        background-color: $blue;
+        padding: 17px 21px 15px;
+        font-size: 78px;
+        font-weight: 900;
+        bottom: -80px;
+        @include x-center;
+        span {
+            font-size: 78px;
+            font-weight: 900;
+            color: $yellow;
+        }
+    }
+}

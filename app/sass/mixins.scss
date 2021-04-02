@@ -1,0 +1,10 @@
+@mixin x-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

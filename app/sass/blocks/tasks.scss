@@ -1,0 +1,73 @@
+.tasks {
+    padding: 150px 0 50px;
+    &__container {
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    &__inner {
+        max-width: 920px;
+        padding: 0 150px 0 200px;
+    }
+    &__title {
+        margin-bottom: 35px;
+    }
+    &__subtitle {
+        margin-bottom: 35px;
+    }
+
+    &__bottom-text {
+        padding-left: 30px;
+        position: relative;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 100%;
+            background-color: $blue;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__button {
+        margin-top: 40px;
+    }
+}
+
+.list-icon {
+    &__item {
+        position: relative;
+        display: flex;
+        margin-bottom: 25px;
+        transition: .2s;
+        &:hover .list-icon__img-wrap{
+            transform: scale(1.2);
+        }
+    }
+    &__img-wrap {
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+        border-radius: 100%;
+        background-color: $bg-cream;
+        margin-right: 20px;
+        @include flex-center;
+        transition: .2s;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 22px;
+    background-color: $blue;
+    color: #fff;
+    transition: .1s ease-in;
+    &:hover {
+        background-color: $btn-hover;
+    }
+}

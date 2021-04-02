@@ -1,0 +1,30 @@
+.realization {
+    padding: 80px 0 43px;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    &__content {
+        width: 50%;
+        background-color: #f2f2f2;
+        padding: 70px 140px 85px;
+        position: relative;
+        max-height: 380px;
+        &-inner {
+            float: left;
+        }
+    }
+    &__text {
+        max-width: 400px;
+        margin-top: 30px;
+    }
+    &__parallax {
+        width: 50%;
+    }
+    &__addition {
+        width: 100%;
+    }
+}
