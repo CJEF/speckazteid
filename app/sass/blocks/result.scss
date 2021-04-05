@@ -1,0 +1,67 @@
+.result {
+    background-color: $bg-cream;
+    position: relative;
+    &__container {
+        padding: 60px 0 155px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url('../images/src/footer-bg.png');
+            background-repeat: no-repeat;
+            width: 872px;
+            height: 495px;
+            top: 113px;
+            left: -31px
+        }
+    }
+    &__text {
+        padding-left: 30px;
+        position: relative;
+        max-width: 440px;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 4px;
+            top: 0;
+            left: 0;
+            background-color: $blue;
+        }
+    }
+    &__bottom {
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        max-width: 220px;
+    }
+    .useful-result {
+        &__label {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        &__btn {
+            margin-top: 40px;
+        }
+        &__link {
+            color: $blue;
+            path {
+                fill: $blue;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__parallax {
+        z-index: 2;
+    }
+
+    &__slider {
+        position: absolute;
+        @include y-center;
+        z-index: 1;
+        overflow-x: visible;
+    }
+}

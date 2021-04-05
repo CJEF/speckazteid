@@ -45,6 +45,7 @@ body {
     position: relative;
     font-family: 'Roboto', sans-serif;
     color: $text-color;
+    overflow-x: hidden;
 }
 
 strong {
@@ -89,22 +90,22 @@ img {
 
 .icon-link {
     position: relative;
-    padding-left: 35px;
     transition: .2s ease;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url('../images/dest/link.svg');
-        width: 25px;
-        height: 25px;
-        &:hover path {
-            fill: $blue;
-        }
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    path {
+        transition: fill .2s ease;
     }
     &:hover {
         color: $blue;
+    }
+    &:hover path {
+        fill: $blue;
+    }
+    span {
+        display: inline-block;
+        margin-left: 15px;
     }
 }
 
@@ -156,4 +157,10 @@ button {
 
 .align-items--center {
     align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
 }
