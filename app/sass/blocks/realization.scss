@@ -1,5 +1,10 @@
 .realization {
     padding: 80px 0 43px;
+    &__top {
+        display: flex;
+        margin: 0 auto;
+        max-width: 2100px;
+    }
     &__container {
         display: flex;
         flex-wrap: wrap;
@@ -7,10 +12,13 @@
         max-width: 1400px;
         margin: 0 auto;
     }
+    &__bottom {
+        margin-top: 70px;
+    }
     &__content {
         width: 50%;
         background-color: #f2f2f2;
-        padding: 70px 140px 85px;
+        padding: 70px 140px 85px 80px;
         position: relative;
         max-height: 380px;
         &-inner {
@@ -23,8 +31,194 @@
     }
     &__parallax {
         width: 50%;
+        position: relative;
+        &-aspro {
+            position: absolute;
+            right: 115px;
+            top: 230px;
+        }
     }
     &__addition {
         width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        max-width: 400px;
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    /* slider */
+
+    &__iphone-slider {
+        float: right;
+        padding-left: 65px;
+        margin: -82px 0 0;
+    }
+
+    &__slider-photo {
+        margin-top: 35px;
+    }
+
+    /* ./slider */
+
+    &__item {
+        margin-bottom: 40px;
+        &-top {
+           display: flex;
+           align-items: center;
+           margin-bottom: 30px;
+        }
+        &-paypost {
+            justify-content: space-between;
+            align-items: center;
+            .text {
+                max-width: 640px;
+            }
+        }
+        .list-icon--custom {
+            margin-top: 55px;
+        }
+    }
+
+    &__item-list {
+        display: flex;
+    }
+
+    &__paypost {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        border-radius: 100%;
+        position: relative;
+        background-color: #004482;
+        img {
+            position: absolute;
+            @include y-center;
+            left: 9px;
+        }
+
+    }
+
+    &__services {
+        margin-top: 30px;
+    }
+
+    &__bottom-text {
+        padding-left: 25px;
+        position: relative;
+        margin-bottom: 40px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 4px;
+            background-color: $blue;
+        }
+    }
+
+    &__list--numbered {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__title-consider {
+        font-size: 30px;
+        font-weight: 900;
+        padding: 5px 8px;
+        span {
+            font-size: 30px;
+        }
+    }
+}
+
+.list-icon-right {
+    .list-icon__item {
+        position: relative;
+        margin-bottom: 0;
+        padding-left: 55px;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url('../images/src/right.svg');
+            top: -5px;
+            left: 0;
+            width: 40px;
+            height: 41px;
+        }
+    }
+}
+
+.list-icon {
+    &--custom {
+        .list-icon__img {
+            position: absolute;
+            width: 44px;
+            left: 0;
+            top: 0;
+        }
+        li {
+            padding-left: 70px;
+            position: relative;
+            width: 33.3333%;
+            .text {
+                font-size: 13px;
+            }
+            b {
+                font-size: 14px;
+            }
+            &:nth-child(1) {
+                .list-icon__img {
+                    transform: rotate(-15deg);
+                }
+            }
+            &:nth-child(2) {
+                .list-icon__img {
+                    transform: rotate(13deg);
+                }
+            }
+            &:nth-child(3) {
+                .list-icon__img {
+                    transform: rotate(-24deg);
+                    width: 55px;
+                }
+            }
+        }
+    }
+}
+
+.services-item {
+    display: flex;
+    margin-bottom: 30px;
+    &__preview {
+        min-width: 270px;
+    }
+    &__content {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    &__text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    &__link {
+        font-size: 13px;
+        margin-top: 15px;
+        max-width: max-content;
+        transition: .1s ease;
+        &:hover {
+            color: $blue;
+        }
     }
 }

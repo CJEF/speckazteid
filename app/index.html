@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1400, user-scalable=yes">
 	<title>Разработка интернет-магазина на системе управления 1С-Битрикс на готовом решении</title>
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
@@ -110,10 +111,10 @@
 
 	<!-- realization -->
 	<section class="realization">
-		<div class="realization__container">
+		<div class="realization__top">
 			<div class="realization__parallax">
 				<img src="./images/dest/notebook.png" alt="notebook">
-				<img src="./images/src/next-logo.svg" alt="next-logo">
+				<img class="realization__parallax-aspro" src="./images/src/next-logo.svg" alt="next-logo">
 			</div>
 			<div class="realization__content">
 				<div class="realiztion__content-inner">
@@ -122,45 +123,70 @@
 						функциональные возможности которого полностью им соответствовали.</p>
 				</div>
 			</div>
+		</div>
+		<div class="realization__container realization__bottom">
 			<div class="realization__addition">
-				<h4 class="realization__subtitle">Дополнительно к основному функционалу решения Next мы доработали:</h4>
-				<ul class="realization__list list-icon">
-					<li class="list-icon__item realization__item">Возможность регистрации, входа и восстановления пароля по смс, используя SMS Центр в качестве провайдера данной услуги,
-					чтобы процесс регистрации или входа не занимал у пользователей более минуты, а в случае утери пароля восстановление не
-					требовало доступа к почте, которая не всегда может быть под рукой.</li>
-					<li class="list-icon__item realization__item">Выгрузку торговых предложений с отображением свойств, остатков и цен, а также выгрузку сертификатов качества к товарам
-					на стороне сайта. Это позволило автоматизировать процесс обновления информации по товарам, а обмен заказами позволил
-					сократить работу менеджеров по продажам.</li>
+				<h4 class="realization__subtitle text--bold">Дополнительно к основному функционалу решения Next мы доработали:</h4>
+				<ul class="realization__list list-icon-right">
 					<li class="realization__iphone-slider iphone-slider">
 						<div class="iphone-slider__container">
 							<img src="./images/dest/iphone-1.png" alt="iphone">
 						</div>
 					</li>
-					<li class="list-icon__item realization__item">После переноса сайта на основной домен провели интеграцию с интернет-эквайрингом PAYPOST.KZ, который позволяет
-					оплачивать покупки на сайте.</li>
-					<li class="list-icon__item realization__item">Разработали баннера для слайдера на главной странице
-
+					<li class="realization__item">
+						<p class="text list-icon__item">Возможность регистрации, входа и восстановления пароля по смс, используя SMS Центр в качестве провайдера данной услуги,
+						чтобы процесс регистрации или входа не занимал у пользователей более минуты, а в случае утери пароля восстановление не
+						требовало доступа к почте, которая не всегда может быть под рукой.</p></li>
+					<li class="realization__item">
+						<p class="text list-icon__item ">Выгрузку торговых предложений с отображением свойств, остатков и цен, а также выгрузку сертификатов качества к товарам
+						на стороне сайта. Это позволило автоматизировать процесс обновления информации по товарам, а обмен заказами позволил
+						сократить работу менеджеров по продажам.</p></li>
+					<li class="realization__item flex realization__item-paypost">
+						<p class="text list-icon__item ">После переноса сайта на основной домен провели интеграцию с интернет-эквайрингом PAYPOST.KZ, который позволяет
+						оплачивать покупки на сайте.</p>
+						<div class="realization__paypost">
+							<img src="./images/src/post.kz.svg" alt="post.kz logo">
+						</div>
 					</li>
-					<li class="list-icon__item realization__item">Разработали баннера для слайдера на главной странице
+					<li class="realization__item">
+						<p class="text list-icon__item">Разработали баннера для слайдера на главной странице</p>
+					</li>
+					<li class="realization__item flex-column">
+						<p class="text list-icon__item">Разработали баннера для слайдера на главной странице</p>
 						<div class="realization__slider-photo">
 							<img src="./images/src/slider-speckaztreid.jpg" alt="slider-speckaztreid">
 						</div>
 					</li>
-					<li class="list-icon__item realization__item">Сделали красивые иконки, подходящие к фирменному стилю компании для блока с тизерами
-						<ul class="realization__item-list list-icon">
-							<li class="list-icon__item">Зимняя и летняя обувь<br>
-							<b>Ботинки от от 7 500 тг.</b></li>
-							<li class="list-icon__item">Спецодежда<br>
-							<b>Для любых сфер деятельности</b></li>
-							<li class="list-icon__item">Средства индивидуальной защиты<br>
-							<b>Очки, перчатки, каски и т.д.</b></li>
+					<li class="realization__item flex-column">
+						<p class="list-icon__item text">Сделали красивые иконки, подходящие к фирменному стилю компании для блока с тизерами</p>
+						<ul class="realization__item-list list-icon--custom">
+							<li class="flex-column">
+								<img src="./images/src/boots-bg.svg" alt="boots" class="list-icon__img">
+								<span class="text">Зимняя и летняя обувь</span>
+								<b>Ботинки от от 7 500 тг.</b>
+							</li>
+							<li class="flex-column">
+								<img src="./images/src/overall-bg.svg" alt="overall" class="list-icon__img">
+								<span class="text">Спецодежда</span>
+								<b>Для любых сфер деятельности</b>
+							</li>
+							<li class="flex-column">
+								<img src="./images/src/glass-bg.svg" alt="glass" class="list-icon__img">
+								<span class="text">Средства индивидуальной защиты</span>
+								<b>Очки, перчатки, каски и т.д.</b>
+							</li>
 						</ul>
 					</li>
-					<li class="list-icon__item realization__item">Также нами был подобран и другой графический контент, например, этот рекламный баннер и изображение для блока «О компании»
-						<img class="realization__engineer" src="./images/src/engineer.jpg" alt="engineer">
+					<li class="realization__item flex-column">
+						<div class="realization__item-top">
+							<p class="list-icon__item text">Также нами был подобран и другой графический контент, например, этот рекламный баннер и изображение для блока «О
+							компании»</p>
+							<img class="realization__engineer" src="./images/src/engineer.jpg" alt="engineer">
+						</div>
 						<img class="realization__banner" src="./images/src/banner.png" alt="banner">
 					</li>
-					<li class="list-icon__item realization__item item-category">Изображения для блока с категориями товара
+					<li class="realization__item item-category flex-column">
+						<p class="list-icon__item text">Изображения для блока с категориями товара</p>
 						<ul class="item-category__wrap">
 							<li class="item-category__block">
 								<span class="item-category__span"></span>
@@ -182,8 +208,8 @@
 							</li>
 						</ul>
 					</li>
-					<li class="list-icon__item realization__item">
-						Анонсовые и детальные изображения для услуг
+					<li class="realization__item flex-column">
+						<p class="list-icon__item text">Анонсовые и детальные изображения для услуг</p>
 						<div class="realization__services">
 							<div class="realization__services-item services-item">
 								<div class="services-item__preview">
@@ -194,7 +220,7 @@
 									<p class="services-item__text">Нанесение рисунка, букв или логотипа на одежду выполняют с помощью метода термопечати. Такую услугу необходимо
 									заказывать именно у профессионалов, которые на профессиональном оборудовании выполнят свою работу и не повредят ткань
 									одежды.</p>
-									<a class="services-item__link">Подробнее</a>
+									<a href="#" class="services-item__link">Подробнее</a>
 								</div>
 							</div>
 							<div class="realization__services-item services-item">
@@ -206,16 +232,16 @@
 									<p class="services-item__text">Нанесение рисунка, букв или логотипа на одежду выполняют с помощью метода термопечати. Такую услугу необходимо
 									заказывать именно у профессионалов, которые на профессиональном оборудовании выполнят свою работу и не повредят ткань
 									одежды.</p>
-									<a class="services-item__link">Подробнее</a>
+									<a href="#" class="services-item__link">Подробнее</a>
 								</div>
 							</div>
 						</div>
 					</li>
 				</ul>
-				<p class="realization__text text">При подборе изображений в первую очередь мы руководствовались нашей памяткой, которую мы всегда отправляем нашим
+				<p class="text realization__bottom-text">При подборе изображений в первую очередь мы руководствовались нашей памяткой, которую мы всегда отправляем нашим
 				клиентам перед заключением договора.</p>
-				<h4 class="realization__title-consider">Мы учитывали</h4>
-				<ol class="realization__list list-numbered">
+				<h4 class="realization__title-consider title-blue">Мы <span>у</span>читывали</h4>
+				<ol class="realization__list--numbered list-numbered">
 					<li class="list-numbered__item">Тематику клиента</li>
 					<li class="list-numbered__item">Сочетаемость цветов</li>
 					<li class="list-numbered__item">Личные предпочтения</li>
