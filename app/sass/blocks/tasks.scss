@@ -36,6 +36,8 @@
     }
     &__button {
         margin-top: 40px;
+        position: absolute;
+        z-index: 1;
     }
 }
 

@@ -2,6 +2,7 @@
     &__container {
         display: flex;
         margin: 0 auto;
+        position: relative;
     }
     &__content {
         width: 50%;
@@ -9,7 +10,8 @@
         padding: 70px 140px 85px;
         position: relative;
         &-inner {
-            float: right;
+            width: 330px;
+            margin-left: auto;
         }
     }
     &__list {
@@ -21,12 +23,15 @@
     &__mackbook {
         width: 65%;
         margin-top: -23px;
-        position: absolute;
-        right: -185px;
+        position: relative;
     }
 
     &__mackbook img{
+        width: 110%;
         max-width: none;
+        position: absolute;
+        top: 15%;
+        left: -30px;
     }
 
 }
@@ -51,5 +56,53 @@
             color: $blue;
             line-height: 28px;
         }
+    }
+}
+
+.glide {
+    &__slide {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    &__arrows {
+        position: relative;
+    }
+    &__arrow {
+        transform: translateY(-500%) translateX(-30px);
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #fff;
+        background-image: url('../images/src/right-arrow.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        font-size: 0;
+    }
+    &__arrow--left {
+        transform: translateY(-500%) rotate(180deg) translateX(-30px);
+    }
+}
+
+.glide-content {
+    position: absolute;
+    z-index: 10;
+    top: 104px;
+    left: 100px;
+    span {
+        display: block;
+    }
+    &__name {
+        font-size: 26px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 16px;
+    }
+    &__btn {
+        margin-top: 40px;
+        font-size: 14px;
     }
 }

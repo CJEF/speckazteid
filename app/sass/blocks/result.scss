@@ -2,7 +2,7 @@
     background-color: $bg-cream;
     position: relative;
     &__container {
-        padding: 60px 0 155px;
+        padding: 60px 0 620px;
         position: relative;
         &:before {
             content: '';
@@ -52,16 +52,33 @@
                 text-decoration: underline;
             }
         }
+        &__content {
+            position: relative;
+        }
     }
 
     &__parallax {
+        position: relative;
         z-index: 2;
+        img {
+            position: absolute;
+            margin-top: 17%;
+            left: 26%;
+            z-index: 1;
+        }
     }
 
     &__slider {
         position: absolute;
-        @include y-center;
+        width: 100%;
+        top: 37%;
+        left: 0;
+        right: 0;
         z-index: 1;
         overflow-x: visible;
+        transform: translateX(-65%);
+        img {
+            max-width: none;
+        }
     }
 }
