@@ -79,7 +79,7 @@
 
         &:nth-child(2),
         &:nth-child(3) {
-            max-width: 500px;
+            max-width: 460px;
         }
         margin-bottom: 40px;
         &-top {
@@ -422,8 +422,12 @@
 }
 
 .iphone-slider .glide {
+    &__track {
+        overflow: visible;
+    }
     &__bullets {
-        top: 105%;
+        bottom: -6%;
+        left: 45%;
     }
     &__bullet {
         background-color: $bg-cream;
@@ -445,27 +449,36 @@
         }
     }
     &__slides {
-        width: 350px;
+        width: 251px !important;
+        overflow: visible !important;
         transform: translate3d(0px, 0px, 0px) !important;
     }
     &__slide {
-        position: relative;
-        transform: scale(.5) translate(-58%,-49%);
+        transform: scale(.7) translate(-20%,74%) skew(0deg,14deg);
         transition: all .2s ease-in;
+        // position: absolute;
+        // overflow: visible;
+        // z-index: 5;
+        // left: 113%;
+        // z-index: 666666;
+        // overflow: visible;
         &:nth-child(1) {
-            transform: scale(.5) translate(160%,-50%);
+            transform: scale(.7) translate(265%,74%) skew(0deg,14deg);
         }
         &:nth-child(1)--active.glide__slide {
+            width: 100%;
             transform: translate3d(-104%, 0px, 0px) !important;
         }
         &--active {
-             transform: translate3d(0px, 0px, 0px) !important;
+            position: relative;
+            width: 100% !important;
+            transform: translate3d(0px, 0px, 0px) !important;
         }
         &#second-item.glide__slide--active {
-            transform: translate3d(-104%, 0px, 0px) !important;
+            transform: translate3d(-60%, 0px, 0px) !important;
         }
         &-speckaztreid {
-            width: 100%;
+            width: 100% !important;
         }
     }
 
@@ -474,12 +487,17 @@
 .glide {
     &__slide {
         position: relative;
+        max-height: 325px;
+        &:nth-child(2) span,
+        &:nth-child(3) span{
+            color: #fff;
+        }
     }
     &__arrows {
         position: relative;
     }
     &__arrow {
-        transform: translateY(-500%) translateX(-30px);
+        transform: translateY(-450%) translateX(-30px);
         width: 40px;
         height: 40px;
         border-radius: 100%;
@@ -490,10 +508,10 @@
         font-size: 0;
     }
     &__arrow--left {
-        transform: translateY(-500%) rotate(180deg) translateX(-30px);
+        transform: translateY(-450%) rotate(180deg) translateX(-30px);
     }
     &__arrow--right {
-        transform: translateY(-500%) translateX(-60px);
+        transform: translateY(-450%) translateX(-60px);
     }
 }
 
@@ -516,6 +534,9 @@
     &__btn {
         margin-top: 40px;
         font-size: 14px;
+        width: 165px;
+        height: 45px;
+        padding: 0;
     }
 }
 
