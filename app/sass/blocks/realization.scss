@@ -31,18 +31,19 @@
         &-aspro {
             position: absolute;
             right: 35px;
-            top: 30%;
+            top: 35%;
         }
         &-img {
             max-width: none;
             overflow: visible;
             position: absolute;
-            top: 62%;
+            top: 75%;
             right: -75px;
             max-width: 140%;
         }
     }
     &__addition {
+        position: relative;
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
@@ -56,10 +57,16 @@
 
     /* slider */
 
+    &__list {
+        position: relative;
+    }
+
     &__iphone-slider {
-        float: right;
-        padding-left: 65px;
-        margin: -82px 0 0;
+        position: absolute;
+        // padding-left: 65px;
+        // margin: -82px 0 0;
+        left: 69%;
+        top: -4%;
     }
 
     &__slider-photo {
@@ -69,6 +76,11 @@
     /* ./slider */
 
     &__item {
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            max-width: 500px;
+        }
         margin-bottom: 40px;
         &-top {
            display: flex;
@@ -103,7 +115,6 @@
             @include y-center;
             left: 9px;
         }
-
     }
 
     &__services {
@@ -140,32 +151,53 @@
         }
     }
 
-    @media (max-width: 1440px) {
+    &__glass {
+        right: -45%;
+        top: 52%;
+    }
+    &__overall {
+        top: 65%;
+        left: -47%;
+    }
+    &__gloves  {
+        right: -50%;
+        top: 80%;
+    }
+    &__gelmet {
+        top: 113%;
+        left: -47%;
+    }
+     &__headphones  {
+        right: -50%;
+        top: 120%;
+    }
+
+    @media (max-width: 1400px) {
         &__parallax-img {
-            top: 125%;
+            top: 37%;
         }
         &__parallax-aspro {
-            top: 184%;
+            top: 30%;
         }
     }
 
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-device-width:600px) {
     .realization__parallax-img {
-        top: 40%;
+        top: 16%;
     }
     .realization__parallax-aspro {
-        top: 103%;
+        top: 33%;
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-device-width:400px) {
     .realization__parallax-img {
         top: 10%;
     }
     .realization__parallax-aspro {
-        top: 103%;
+        top: 30%;
     }
 }
 
@@ -363,5 +395,99 @@
         &:hover {
             color: $blue;
         }
+    }
+}
+
+.iphone-slider .glide {
+    &__bullets {
+        top: 105%;
+    }
+    &__bullet {
+        background-color: $bg-cream;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+        &--active:focus,
+        &--active {
+            background-color: $blue;
+            border-color: $blue;
+            &:hover {
+                background-color: $blue;
+                border-color: $blue;
+            }
+        }
+        &:hover {
+            background-color: #d1cfcf;
+            border-color: #d1cfcf;
+        }
+    }
+    &__slide {
+        &:nth-child(1) {
+            transform: scale(.5) translate(377%,-50%);
+        }
+        position: relative;
+        transform: scale(.5) translate(-58%,-49%);
+        transition: all .2s ease;
+        &--active.glide__slide {
+            display: block !important;
+            transform: scale(1) translate(0);
+        }
+        &-speckaztreid {
+            width: 100%;
+        }
+    }
+
+}
+
+.glide {
+    &__arrows {
+        position: relative;
+    }
+    &__arrow {
+        transform: translateY(-500%) translateX(-30px);
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #fff;
+        background-image: url('../images/src/right-arrow.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        font-size: 0;
+    }
+    &__arrow--left {
+        transform: translateY(-500%) rotate(180deg) translateX(-30px);
+    }
+    &__arrow--right {
+        transform: translateY(-500%) translateX(-60px);
+    }
+}
+
+.glide-content {
+    position: absolute;
+    z-index: 10;
+    top: 104px;
+    left: 100px;
+    span {
+        display: block;
+    }
+    &__name {
+        font-size: 26px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 16px;
+    }
+    &__btn {
+        margin-top: 40px;
+        font-size: 14px;
+    }
+}
+
+.rellax__item {
+    position: absolute;
+    .result__winterOverall {
+        top: 47%;
+        left: -38%;
     }
 }

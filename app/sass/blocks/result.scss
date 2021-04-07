@@ -62,11 +62,24 @@
         z-index: 2;
         img {
             position: absolute;
-            margin-top: 17%;
+            margin-top: 260px;
             left: 26%;
             z-index: 1;
         }
     }
+
+    @media screen and (max-device-width:500px) {
+        &__parallax img {
+            margin-top: 90px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__parallax img {
+            margin-top: 95px;
+        }
+    }
+
 
     &__slider {
         position: absolute;
@@ -81,4 +94,14 @@
             max-width: none;
         }
     }
+
+    &__boots {
+        top: -60%;
+        left: 120%;
+    }
+    &__suit {
+        top: 53%;
+        left: -35%;
+    }
+
 }
