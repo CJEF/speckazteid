@@ -125,6 +125,10 @@
         padding-left: 25px;
         position: relative;
         margin-bottom: 40px;
+        span {
+            color: #1B94F4;
+            text-decoration: underline;
+        }
         &:before {
             content: '';
             position: absolute;
