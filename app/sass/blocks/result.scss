@@ -68,18 +68,6 @@
         }
     }
 
-    @media screen and (max-device-width:500px) {
-        &__parallax img {
-            margin-top: 90px;
-        }
-    }
-
-    @media (max-width: 600px) {
-        &__parallax img {
-            margin-top: 95px;
-        }
-    }
-
 
     &__slider {
         position: absolute;
@@ -104,4 +92,17 @@
         left: -35%;
     }
 
+    @media screen and (max-device-width:500px) {
+        &__boots {
+            top: 7%;
+            left: 104%;
+        }
+        .result__parallax img {
+            margin-top: 150px;
+        }
+        &__suit {
+            top: 20%;
+            left: -29%;
+        }
+    }
 }

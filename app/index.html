@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name='viewport' content=' width=device-width, initial-scale=0.1, maximum-scale=1, user-scalable=1'  />
-    <meta name="viewport" content="width=1400, user-scalable=yes" />
+    <meta name='viewport' content='width=device-width, initial-scale=0.1, maximum-scale=1, user-scalable=1'  />
+    <meta name="viewport" content="width=1700, user-scalable=yes" />
     <title>
       Разработка интернет-магазина на системе управления 1С-Битрикс на готовом
       решении
@@ -219,10 +219,10 @@
                 <div class="glide">
                   <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
-                      <li class="glide__slide">
+                      <li class="glide__slide" id="first-item">
                         <img src="./images/src/iphone-1.png" alt="iphone" />
                       </li>
-                      <li class="glide__slide">
+                      <li class="glide__slide" id="second-item">
                         <img
                           src="./images/src/iphone-1.png"
                           alt="iphone"
@@ -297,17 +297,17 @@
                           alt="slider-speckaztreid"
                           class="glide__slide-speckaztreid"
                         />
-						<div class="glide__slide-content glide-content">
-							<span class="glide-content__name"
-							  >Зимняя спецодежда</span
-							>
-							<span class="glide-content__text"
-							  >Не дайте холоду остановить вас</span
-							>
-							<button class="glide-content__btn btn">
-							  Узнать подробнее
-							</button>
-						  </div>
+                        <div class="glide__slide-content glide-content">
+                          <span class="glide-content__name"
+                            >Зимняя спецодежда</span
+                          >
+                          <span class="glide-content__text"
+                            >Не дайте холоду остановить вас</span
+                          >
+                          <button class="glide-content__btn btn">
+                            Узнать подробнее
+                          </button>
+                          </div>
                       </li>
                       <li class="glide__slide">
                         <img
@@ -315,17 +315,17 @@
                           alt="slider-speckaztreid"
                           class="glide__slide-speckaztreid"
                         />
-						<div class="glide__slide-content glide-content">
-							<span class="glide-content__name"
-							  >Зимняя спецодежда</span
-							>
-							<span class="glide-content__text"
-							  >Не дайте холоду остановить вас</span
-							>
-							<button class="glide-content__btn btn">
-							  Узнать подробнее
-							</button>
-						  </div>
+                        <div class="glide__slide-content glide-content">
+                          <span class="glide-content__name"
+                            >Зимняя спецодежда</span
+                          >
+                          <span class="glide-content__text"
+                            >Не дайте холоду остановить вас</span
+                          >
+                          <button class="glide-content__btn btn">
+                            Узнать подробнее
+                          </button>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -578,8 +578,8 @@
       // glide slider
       new Glide(".glide", {
         type: 'slider',
-        // autoplay: 4000,
-        focusAt: 'center',
+        // autoplay: 5000,
+        // focusAt: 'center',
         perView: 2
       }).mount();
       new Glide(".glide-2").mount();

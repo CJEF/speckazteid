@@ -172,6 +172,29 @@
         top: 120%;
     }
 
+    @media screen and (max-device-width:600px) {
+        &__gelmet {
+            top: 100%;
+            left: -30%;
+        }
+        &__overall {
+            top: 66%;
+            left: -29%;
+        }
+        &__glass {
+            right: -29%;
+            top: 40%;
+        }
+        .realization__gloves {
+            right: -25%;
+            top: 65%;
+        }
+        &__headphones {
+            right: -31%;
+            top: 107%;
+        }
+    }
+
     @media (max-width: 1400px) {
         &__parallax-img {
             top: 37%;
@@ -421,16 +444,25 @@
             border-color: #d1cfcf;
         }
     }
+    &__slides {
+        width: 350px;
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
     &__slide {
-        &:nth-child(1) {
-            transform: scale(.5) translate(377%,-50%);
-        }
         position: relative;
         transform: scale(.5) translate(-58%,-49%);
-        transition: all .2s ease;
-        &--active.glide__slide {
-            display: block !important;
-            transform: scale(1) translate(0);
+        transition: all .2s ease-in;
+        &:nth-child(1) {
+            transform: scale(.5) translate(160%,-50%);
+        }
+        &:nth-child(1)--active.glide__slide {
+            transform: translate3d(-104%, 0px, 0px) !important;
+        }
+        &--active {
+             transform: translate3d(0px, 0px, 0px) !important;
+        }
+        &#second-item.glide__slide--active {
+            transform: translate3d(-104%, 0px, 0px) !important;
         }
         &-speckaztreid {
             width: 100%;
@@ -440,6 +472,9 @@
 }
 
 .glide {
+    &__slide {
+        position: relative;
+    }
     &__arrows {
         position: relative;
     }
