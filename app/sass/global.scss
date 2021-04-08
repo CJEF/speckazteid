@@ -3,6 +3,14 @@ html {
     overflow-x: hidden;
 }
 
+@media screen and (max-device-width:1700px) {
+    html,
+    body {
+        overflow-x: auto;
+    }
+
+}
+
 *,
 *:before,
 *:after {
@@ -165,4 +173,3 @@ button {
     margin: 0 auto;
     position: relative;
 }
-

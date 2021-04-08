@@ -37,7 +37,7 @@
             max-width: none;
             overflow: visible;
             position: absolute;
-            top: 75%;
+            top: 25%;
             right: -75px;
             max-width: 140%;
         }
@@ -178,7 +178,7 @@
 
     @media screen and (max-device-width:600px) {
         &__gelmet {
-            top: 100%;
+            top: 95%;
             left: -30%;
         }
         &__overall {
@@ -191,17 +191,17 @@
         }
         .realization__gloves {
             right: -25%;
-            top: 65%;
+            top: 60%;
         }
         &__headphones {
             right: -31%;
-            top: 107%;
+            top: 99%;
         }
     }
 
-    @media (max-width: 1400px) {
+@media screen and (max-device-width:1400px) {
         &__parallax-img {
-            top: 37%;
+            top: -14%;
         }
         &__parallax-aspro {
             top: 30%;
@@ -212,7 +212,7 @@
 
 @media screen and (max-device-width:600px) {
     .realization__parallax-img {
-        top: 16%;
+        top: -16%;
     }
     .realization__parallax-aspro {
         top: 33%;
@@ -221,7 +221,7 @@
 
 @media screen and (max-device-width:400px) {
     .realization__parallax-img {
-        top: 10%;
+        top: -12%;
     }
     .realization__parallax-aspro {
         top: 30%;
@@ -409,6 +409,8 @@
         font-weight: 500;
         cursor: pointer;
         line-height: 24px;
+        display: inline-block;
+        margin-bottom: 7px;
     }
     &__text {
         font-size: 15px;
@@ -462,12 +464,6 @@
     &__slide {
         transform: scale(.7) translate(-20%,74%) skew(0deg,14deg);
         transition: all .2s ease-in;
-        // position: absolute;
-        // overflow: visible;
-        // z-index: 5;
-        // left: 113%;
-        // z-index: 666666;
-        // overflow: visible;
         &:nth-child(1) {
             transform: scale(.7) translate(265%,74%) skew(0deg,14deg);
         }
