@@ -10,6 +10,7 @@
       решении
     </title>
     <link rel="stylesheet" href="css/app.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -79,8 +80,6 @@
             <img
               src="./images/src/goals-mack-2.png"
               alt="mackbook"
-              data-rellax-speed="3"
-              class="rellax"
             />
           </div>
         </div>
@@ -462,7 +461,7 @@
                     <img src="./images/src/services-1.jpg" alt="Термопечать" />
                   </a>
                   <div class="services-item__content">
-                    <a href="#" class="services-item__title">Термопечать</a>
+                    <a class="services-item__title">Термопечать</a>
                     <p class="services-item__text">
                       Нанесение рисунка, букв или логотипа на одежду выполняют с
                       помощью метода термопечати. Такую услугу необходимо
@@ -470,7 +469,7 @@
                       профессиональном оборудовании выполнят свою работу и не
                       повредят ткань одежды.
                     </p>
-                    <a href="#" class="services-item__link">Подробнее</a>
+                    <a class="services-item__link">Подробнее</a>
                   </div>
                 </div>
                 <div class="realization__services-item services-item">
@@ -478,7 +477,7 @@
                     <img src="./images/src/servcies-2.jpg" alt="Вышивка" />
                   </a>
                   <div class="services-item__content">
-                    <a href="#" class="services-item__title">Вышивка</a>
+                    <a class="services-item__title">Вышивка</a>
                     <p class="services-item__text">
                       Нанесение рисунка, букв или логотипа на одежду выполняют с
                       помощью метода термопечати. Такую услугу необходимо
@@ -486,7 +485,7 @@
                       профессиональном оборудовании выполнят свою работу и не
                       повредят ткань одежды.
                     </p>
-                    <a href="#" class="services-item__link">Подробнее</a>
+                    <a class="services-item__link">Подробнее</a>
                   </div>
                 </div>
               </div>
@@ -529,6 +528,7 @@
               <img
                 class="rellax"
                 data-rellax-speed=".5"
+                data-aos="fade-down"
                 src="./images/src/footer-iphone-top.png"
                 alt="iphone"
               />
@@ -564,7 +564,7 @@
             </button>
           </div>
 		  <img src="./images/src/suit-bg.svg"  data-rellax-speed="1" alt="suit" class="result__suit rellax rellax__item">
-		  <img src="./images/src/boots-bg.svg" alt="boots" class="result__boots rellax rellax__item">
+		  <img src="./images/src/boots-bg.svg" alt="boots" class="result__boots rellax__item">
         </div>
       </div>
       <!-- ../result -->
@@ -573,6 +573,7 @@
     <script src="js/app.min.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/glides.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
       // rellax parllax
@@ -592,6 +593,10 @@
         perView: 2
       }).mount();
       new Glide(".glide-2").mount();
+
+      //AOS
+      AOS.init();
+
     </script>
   </body>
 </html>
