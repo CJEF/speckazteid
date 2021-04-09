@@ -1,6 +1,7 @@
 .result {
     background-color: $bg-cream;
     position: relative;
+    overflow: hidden;
     &__container {
         padding: 60px 0 220px;
         position: relative;
@@ -87,7 +88,7 @@
         left: 120%;
     }
     &__suit {
-        top: 26%;
+        top: 30%;
         left: -35%;
     }
 
