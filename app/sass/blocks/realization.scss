@@ -463,7 +463,7 @@
     }
     &__slide {
         transform: scale(.7) translate(-20%,74%) skew(0deg,14deg);
-        transition: all .2s ease-in;
+        transition: all .5s ease-in;
         &:nth-child(1) {
             transform: scale(.7) translate(265%,74%) skew(0deg,14deg);
         }
@@ -534,6 +534,7 @@
         font-size: 16px;
     }
     &__btn {
+        font-weight: 400;
         margin-top: 40px;
         font-size: 14px;
         width: 165px;

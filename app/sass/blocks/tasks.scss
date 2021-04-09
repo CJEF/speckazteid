@@ -20,7 +20,7 @@
     &__bottom-text {
         padding-left: 30px;
         position: relative;
-        font-weight: bold;
+        font-weight: 700;
         font-size: 18px;
         line-height: 28px;
         margin-top: 10px;
@@ -64,13 +64,4 @@
     }
 }
 
-.btn {
-    display: inline-block;
-    padding: 20px 22px;
-    background-color: $blue;
-    color: #fff;
-    transition: .1s ease-in;
-    &:hover {
-        background-color: $btn-hover;
-    }
-}
+

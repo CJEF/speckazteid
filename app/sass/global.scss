@@ -15,7 +15,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
@@ -52,7 +52,7 @@ h6 {
 body {
     min-width: 320px;
     position: relative;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     color: $text-color;
     overflow-x: hidden;
 }
@@ -62,8 +62,8 @@ strong {
 }
 
 button {
-    font-family: 'Open Sans';
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -172,4 +172,16 @@ button {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+}
+
+.btn {
+    font-weight: 700;
+    display: inline-block;
+    padding: 20px 22px;
+    background-color: $blue;
+    color: #fff;
+    transition: .1s ease-in;
+    &:hover {
+        background-color: $btn-hover;
+    }
 }

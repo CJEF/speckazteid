@@ -9,8 +9,11 @@
       Разработка интернет-магазина на системе управления 1С-Битрикс на готовом
       решении
     </title>
+    <link href="css/vendors/aos.css" rel="stylesheet">
+    <link href="css/vendors/glide.core.css" rel="stylesheet">
+    <link href="css/vendors/glide.theme.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -78,6 +81,7 @@
           </div>
           <div class="goals__mackbook">
             <img
+              loading="lazy"
               src="./images/src/goals-gif.gif"
               alt="mackbook"
             />
@@ -88,7 +92,7 @@
       <!-- tasks -->
       <section class="tasks">
         <div class="tasks__container">
-          <img src="./images/src/human-back.png" alt="overalls" />
+          <img src="./images/src/human-back.jpg" alt="overalls" />
           <div class="tasks__inner">
             <h3 class="tasks__title title-blue">за<span>д</span>ачи</h3>
             <h4 class="tasks__subtitle subtitle">
@@ -172,7 +176,7 @@
             </p>
             <a href="#" class="tasks__button btn">Хочу такой сайт</a>
           </div>
-          <img src="./images/src/human-front.png" alt="overalls" />
+          <img src="./images/src/human-front.jpg" alt="overalls" />
         </div>
       </section>
       <!-- ../tasks -->
@@ -184,7 +188,7 @@
             <img
               data-rellax-speed="1.5"
               class="rellax realization__parallax-img"
-              src="./images/src/notebook.png"
+              src="./images/src/notebook.jpg"
               alt="notebook"
             />
             <img
@@ -526,7 +530,7 @@
             <div class="result__parallax">
               <h3 class="visually-hidden">Итоги</h3>
               <img
-                data-aos="fade-down"
+                data-aos="fade-down" data-aos-duration="1500"
                 src="./images/src/footer-iphone-top.png"
                 alt="iphone"
               />
@@ -568,10 +572,10 @@
       <!-- ../result -->
     </main>
 
-    <script src="js/app.min.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/glides.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/app.min.js"></script>
 
     <script>
       // rellax parllax
