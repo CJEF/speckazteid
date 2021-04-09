@@ -1,5 +1,5 @@
 .realization {
-    padding: 80px 0 43px;
+    padding: 110px 0 43px;
     &__top {
         display: flex;
         margin: 0 auto;
@@ -37,8 +37,8 @@
             max-width: none;
             overflow: visible;
             position: absolute;
-            top: 20%;
-            right: 58px;
+            top: 25%;
+            right: -5%;
             max-width: 140%;
         }
     }
@@ -462,11 +462,13 @@
         transform: translate3d(0px, 0px, 0px) !important;
     }
     &__slide {
-        transform: scale(.7) translate(-20%,74%) skew(0deg,14deg);
-        transition: all .5s ease-in;
+            transform: perspective(313px) rotateY(-40deg) translate(-11%, 63%) skew(1deg,-18deg);
+            transition: all .5s ease-in;
         &:nth-child(1) {
-            transform: scale(.7) translate(265%,74%) skew(0deg,14deg);
+            // transform: scale(.7) translate(265%,74%) skew(0deg,14deg);
+            transform: perspective(659px) rotateY(-65deg) translate(260%,35%) skew(0deg,-8deg) scale(.7)
         }
+
         &:nth-child(1)--active.glide__slide {
             width: 100%;
             transform: translate3d(-104%, 0px, 0px) !important;
