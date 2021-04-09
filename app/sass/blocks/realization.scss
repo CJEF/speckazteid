@@ -462,7 +462,7 @@
         transform: translate3d(0px, 0px, 0px) !important;
     }
     &__slide {
-            transform: perspective(313px) rotateY(-40deg) translate(-11%, 63%) skew(1deg,-18deg);
+            transform: perspective(313px) rotateY(-40deg) translate(-21%,63%) skew(1deg,-18deg);
             transition: all .2s ease-in;
         &:nth-child(1) {
             // transform: scale(.7) translate(265%,74%) skew(0deg,14deg);
